@@ -5,7 +5,7 @@ module.exports = {
       'module-resolver',
       {
         alias: {
-          'ui-lib': '../../packages/ui',
+          'ui-lib': './packages/ui',
         },
       },
     ],

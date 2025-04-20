@@ -1,0 +1,14 @@
+# .eslintignore
+**/.eslintrc.js
+**/jest.config.js
+**/babel.config.js
+**/metro.config.js
+**/*.config.js
+**/index.js
+**/*.js
+
+node_modules/
+dist/
+build/
+.eslintrc.js
+.eslintignore
