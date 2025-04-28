@@ -1,13 +1,10 @@
 const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
 const path = require('path');
+const { generate } = require('@storybook/react-native/scripts/generate');
 
-// TODO: change 'myCompany' to your company/proj. name and 'packages/api', 'packages/components'
-// to the real shared packages name.
-// const monorepoPackages = {
-//   '@myCompany/api': path.resolve(workspaceRoot, 'packages/api'),
-//   '@myCompany/components': path.resolve(workspaceRoot, 'packages/components'),
-// };
-// config.watchFolders = [projectRoot, ...Object.values(monorepoPackages)];
+generate({
+  configPath: path.resolve(__dirname, './.storybook'),
+});
 
 const projectRoot = __dirname;
 
@@ -31,6 +28,9 @@ const config = {
     nodeModulesPaths,
     extraNodeModules,
     disableHierarchicalLookup: true,
+  },
+  transformer: {
+    unstable_allowRequireContext: true,
   },
 };
 const metroConfig = mergeConfig(getDefaultConfig(__dirname), config);
