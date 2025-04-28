@@ -1,13 +1,16 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  button: {
+  sxButton: {
     backgroundColor: '#6200ee',
     padding: 12,
     borderRadius: 6,
     alignItems: 'center',
   },
-  text: {
+  sxDisabled: {
+    backgroundColor: '#cccccc',
+  },
+  sxText: {
     color: 'white',
     fontWeight: 'bold',
   },

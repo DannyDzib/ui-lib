@@ -1,1 +1,3 @@
-export { default } from './.storybook';
+import StorybookUI from './.storybook';
+
+export default StorybookUI;

@@ -23,6 +23,7 @@ type Story = StoryObj<typeof meta>;
 export const Button: Story = {
   args: {
     label: 'Hello world',
+    disabled: true,
     onPress: action('my-button-click'),
   },
 };
