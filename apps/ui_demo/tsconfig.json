@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json", // Ruta al tsconfig global
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-native",
+    "jsxImportSource": "react",
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}
